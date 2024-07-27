@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ICardRecyclerView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="department_spi_array">
+        <item>MCA</item>
+        <item>MSc. IT</item>
+        <item>BCA</item>
+        <item>BSc. IT</item>
+        <item>B.Tech IT</item>
+        <item>B.Tech CS</item>
+    </string-array>
+    <string-array name="institute_spi_array">
+        <item>PIET</item>
+        <item>PICA</item>
+        <item>PIT</item>
+    </string-array>
+</resources>
