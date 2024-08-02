@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InsertBottomSheetFragment">
+    tools:context=".InsertBottomSheetFragment"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -63,12 +65,12 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/enrollins_et" />
 
-        <Spinner
+        <AutoCompleteTextView
             android:id="@+id/department_spi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:entries="@array/department_spi_array"
+            android:hint="Select Your Department"
             app:layout_constraintTop_toBottomOf="@id/departmentins_tv" />
 
         <TextView
@@ -82,12 +84,13 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/department_spi" />
 
-        <Spinner
+        <AutoCompleteTextView
             android:id="@+id/institute_spi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:entries="@array/institute_spi_array"
+            android:hint="Select Your Institute"
             app:layout_constraintTop_toBottomOf="@id/instituteins_tv" />
 
         <Button
@@ -100,6 +103,12 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/institute_spi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
 
         <!--        <EditText-->
